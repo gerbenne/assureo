@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("/web/20210305023300cs_/https://www.assureo.fr/sites/all/themes/custom/assureo/css/ekomi.css");
 
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -470,6 +471,7 @@ ul {
 #home-offres .box-as.lk-grd {
     margin-top: -10rem;
     border: .1rem solid #cfcfcd;
+    min-height: 598px;
 }
 
 @media(max-width:767px) {
@@ -591,8 +593,8 @@ ul {
 }
 
 @media(max-width:767px) {
-    #home-offres .box-as.lk-grd .content {
-        display: none;
+    #home-offres .box-as.lk-grd {
+        min-height: inherit;
     }
 }
 
@@ -639,7 +641,7 @@ ul {
 #intro.stripe-section {
     padding: 5rem 0;
     position: relative;
-    background-image: url("./intro-background1.jpg");
+    background-image: url("./BG_HEADER.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1288,8 +1290,8 @@ ul {
 #site-prefooter .logo-cell,
 #site-prefooter .address-cell,
 #site-prefooter .nav-cell {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 #site-prefooter .address-cell a,
@@ -1736,6 +1738,10 @@ body.admin-menu{
     #site-reassurance {
         padding-top: 4rem;
         padding-bottom: 4rem;
+    }
+
+    #site-reassurance .display-sm-table > div:not(:last-child) {
+        margin-bottom: 40px;
     }
 }
 
@@ -2418,6 +2424,27 @@ body.admin-menu{
 
 .follow-us ul li a.picto-Facebook {
     background: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/images/picto_FB.svg") no-repeat 0 0;
+}
+
+#site-prefooter ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+#site-prefooter ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+#site-prefooter ul:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1rem;
+    background: #e30155;
+    left: 0;
+    top: 30px;
+    height: 52px;
 }
 
 @media screen and (max-width: 1075px) {
