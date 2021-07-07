@@ -1,0 +1,102 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/**
+ * Created by MMC on 11/12/2015.
+ */
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1,c.length);
+    }
+
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+
+  return null;
+}
+
+function setCookie(name, value, days) {
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      var expires = "; expires=" + date.toGMTString();
+  }
+  else{
+    var expires = "";
+  }
+
+  document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+(function ($) {
+  $( document ).ready(function() {
+	var loc2 = window.location.pathname;
+    var result2 = loc2.indexOf('validerConnexion.do');
+
+    if (readCookie('utilisateurConnecte') == 'yes') {
+      var loc = window.location.pathname;
+      var result = loc.indexOf('Proximeo');
+      $('a[title="Espace personnel"]').attr({'title':'Se déconnecter', 'href':'/Proximeo/deconnexion.do'});
+      $('#site-header #header-se-connecter > button > span').text('Se déconnecter');
+
+      if (readCookie('utilisateurConnecte') == 'yes' && result > 0) {
+        $('#site-header #header-se-connecter').attr({'title':'Se déconnecter', 'href':'/Proximeo/deconnexion.do'});
+        $('#site-header #header-se-connecter > button > span').text('Se déconnecter');
+        $(".popup-callback").colorbox({iframe:true, width:"400", height:"396"});
+      } else if(readCookie('utilisateurConnecte') == 'yes' && result == -1) {
+        $('#site-header  #header-se-connecter').attr({'title':'Mon espace client', 'href':'/Proximeo/gestionSouscripteur.do'});
+        $('#site-header  #header-se-connecter > button > span').text('Mon espace client');
+      }
+    }
+    else {
+      $('a[title="Espace personnel"]').attr('href','/espace-personnel');
+    }
+
+    if($('#workWindow').length > 0) {
+      $('.espaceClientContenuHome').parents('.col-2').remove();
+      $('#menu.menuTemplate').show();
+      $('.message').remove();
+      $('.col-1').css('width', '100%');
+      $('#corps').css('float', 'left');
+    }
+  });
+})(jQuery);
+
+
+}
+/*
+     FILE ARCHIVED ON 04:32:02 Mar 28, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:38:24 Jul 06, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 47.364
+  exclusion.robots: 0.208
+  captures_list: 127.701
+  exclusion.robots.policy: 0.193
+  CDXLines.iter: 21.383 (3)
+  esindex: 0.017
+  load_resource: 145.835
+  PetaboxLoader3.resolve: 76.817
+  PetaboxLoader3.datanode: 74.63 (4)
+  LoadShardBlock: 54.998 (3)
+*/

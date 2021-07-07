@@ -1,0 +1,91 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/**
+ * @file
+ * Colorbox module load js.
+ */
+(function ($) {
+
+Drupal.behaviors.initColorboxLoad = {
+  attach: function (context, settings) {
+    if (!$.isFunction($.colorbox) || typeof settings.colorbox === 'undefined') {
+      return;
+    }
+
+    if (settings.colorbox.mobiledetect && window.matchMedia) {
+      // Disable Colorbox for small screens.
+      var mq = window.matchMedia("(max-device-width: " + settings.colorbox.mobiledevicewidth + ")");
+      if (mq.matches) {
+        return;
+      }
+    }
+
+    $.urlParams = function (url) {
+      var p = {},
+          e,
+          a = /\+/g,  // Regex for replacing addition symbol with a space.
+          r = /([^&=]+)=?([^&]*)/g,
+          d = function (s) { return decodeURIComponent(s.replace(a, ' ')); },
+          q = url.split('?');
+      while (e = r.exec(q[1])) {
+        e[1] = d(e[1]);
+        e[2] = d(e[2]);
+        switch (e[2].toLowerCase()) {
+          case 'true':
+          case 'yes':
+            e[2] = true;
+            break;
+          case 'false':
+          case 'no':
+            e[2] = false;
+            break;
+        }
+        if (e[1] == 'width') { e[1] = 'innerWidth'; }
+        if (e[1] == 'height') { e[1] = 'innerHeight'; }
+        p[e[1]] = e[2];
+      }
+      return p;
+    };
+    $('.colorbox-load', context)
+      .once('init-colorbox-load', function () {
+        var params = $.urlParams($(this).attr('href'));
+        $(this).colorbox($.extend({}, settings.colorbox, params));
+      });
+  }
+};
+
+})(jQuery);
+
+
+}
+/*
+     FILE ARCHIVED ON 04:32:02 Mar 28, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:38:49 Jul 06, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.012
+  PetaboxLoader3.resolve: 159.079
+  captures_list: 750.179
+  LoadShardBlock: 85.765 (3)
+  exclusion.robots: 0.223
+  CDXLines.iter: 19.777 (3)
+  load_resource: 235.084
+  exclusion.robots.policy: 0.208
+  PetaboxLoader3.datanode: 157.353 (4)
+  RedisCDXSource: 641.205
+*/

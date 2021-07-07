@@ -1,0 +1,98 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/**
+ * Provide the HTML to create the modal dialog.
+ */
+(function ($) {
+  Drupal.theme.prototype.assureo_common_modal_popup = function () {
+    var html = '';
+    html += '  <div id="ctools-modal">';
+    html += '    <div class="overlay-call-back overlay overlay-xs">';
+    html += '      <div class="overlay-inner">';
+    html += '        <a href="javascript:void(0);" class="close close-overlay icon-as" title="Fermer la fenêtre"><i class="icon-times"></i></a>';
+    html += '        <div id="modal-content">';
+
+    html += '        </div>';
+    html += '      </div>';
+    html += '    </div>';
+    html += '  </div>';
+    return html;
+  };
+
+  Drupal.theme.prototype.assureo_common_modal_popup_error = function () {
+    var html = '';
+    html += '  <div id="ctools-modal">';
+    html += '    <div class="overlay-call-back-error overlay overlay-xs">';
+    html += '      <div class="overlay-inner">';
+    html += '        <a href="javascript:void(0);" class="close close-overlay-error icon-as" title="Fermer la fenêtre"><i class="icon-times"></i></a>';
+    html += '        <div id="modal-content">';
+
+    html += '        </div>';
+    html += '      </div>';
+    html += '    </div>';
+    html += '  </div>';
+    return html;
+  }
+})(jQuery);
+
+(function($, Drupal) {
+  function assureo_show_popup(theme, response){
+    $('#ctools-modal').remove();
+    var popup = Drupal.theme(theme);
+    $('.main-footer').append(popup);
+    $('#modal-content').html(response.form);
+    if (typeof response.message != "undefined") {
+      $('#modal-content .row:first').prepend('<p class="error-message">' + response.message + '</p>');
+    }
+  }
+
+  Drupal.ajax.prototype.commands.modal_form_callback = function(ajax, response, status) {
+    assureo_show_popup('assureo_common_modal_popup', response);
+  }
+
+  Drupal.ajax.prototype.commands.modal_form_error = function(ajax, response, status) {
+    assureo_show_popup('assureo_common_modal_popup_error', response);
+  }
+
+  Drupal.ajax.prototype.commands.delay_modal_dismiss = function(ajax, response, status) {
+    setTimeout(function () {
+      Drupal.CTools.Modal.dismiss();
+      $('link.ctools-temporary-css').remove();
+    }, response.delay);
+  }
+
+})(jQuery, Drupal);
+
+
+}
+/*
+     FILE ARCHIVED ON 04:32:02 Mar 28, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:38:24 Jul 06, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 100.569
+  exclusion.robots: 0.116
+  exclusion.robots.policy: 0.107
+  RedisCDXSource: 1.762
+  esindex: 0.008
+  LoadShardBlock: 76.874 (3)
+  PetaboxLoader3.datanode: 81.162 (4)
+  CDXLines.iter: 19.139 (3)
+  load_resource: 52.422
+  PetaboxLoader3.resolve: 34.812
+*/

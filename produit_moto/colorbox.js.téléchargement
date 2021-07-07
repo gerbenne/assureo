@@ -1,0 +1,78 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/**
+ * @file
+ * Colorbox module init js.
+ */
+
+(function ($) {
+
+Drupal.behaviors.initColorbox = {
+  attach: function (context, settings) {
+    if (!$.isFunction($.colorbox) || typeof settings.colorbox === 'undefined') {
+      return;
+    }
+
+    if (settings.colorbox.mobiledetect && window.matchMedia) {
+      // Disable Colorbox for small screens.
+      var mq = window.matchMedia("(max-device-width: " + settings.colorbox.mobiledevicewidth + ")");
+      if (mq.matches) {
+        return;
+      }
+    }
+
+    // Use "data-colorbox-gallery" if set otherwise use "rel".
+    settings.colorbox.rel = function () {
+      if ($(this).data('colorbox-gallery')) {
+        return $(this).data('colorbox-gallery');
+      }
+      else {
+        return $(this).attr('rel');
+      }
+    };
+
+    $('.colorbox', context)
+      .once('init-colorbox')
+      .colorbox(settings.colorbox);
+
+    $(context).bind('cbox_complete', function () {
+      Drupal.attachBehaviors('#cboxLoadedContent');
+    });
+  }
+};
+
+})(jQuery);
+
+
+}
+/*
+     FILE ARCHIVED ON 04:32:02 Mar 28, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:39:15 Jul 06, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 4.03
+  exclusion.robots: 0.196
+  CDXLines.iter: 21.985 (3)
+  esindex: 0.012
+  captures_list: 141.307
+  exclusion.robots.policy: 0.183
+  LoadShardBlock: 110.279 (3)
+  PetaboxLoader3.datanode: 77.985 (4)
+  load_resource: 50.182
+  PetaboxLoader3.resolve: 78.282 (2)
+*/

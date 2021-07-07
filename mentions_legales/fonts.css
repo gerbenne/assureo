@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Asap';
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Regular.eot");
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Regular.eot#iefix") format("embedded-opentype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Regular.woff") format("woff"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Regular.ttf") format("truetype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Regular.svg#Asap-Regular") format("svg");
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Italic.eot");
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Italic.eot#iefix") format("embedded-opentype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Italic.woff") format("woff"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Italic.ttf") format("truetype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Italic.svg#Asap-Italic") format("svg");
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Bold.eot");
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Bold.eot#iefix") format("embedded-opentype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Bold.woff") format("woff"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Bold.ttf") format("truetype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-Bold.svg#Asap-Bold") format("svg");
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-BoldItalic.eot");
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-BoldItalic.eot#iefix") format("embedded-opentype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-BoldItalic.woff") format("woff"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-BoldItalic.ttf") format("truetype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/ASAP/Asap-BoldItalic.svg#Asap-BoldItalic") format("svg");
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'icomoon';
+    src:  url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/icomoon/icomoon.eot?lc32gq");
+    src:  url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/icomoon/icomoon.eot?lc32gq#iefix") format("embedded-opentype"),
+    url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/icomoon/icomoon.ttf?lc32gq") format("truetype"),
+    url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/icomoon/icomoon.woff?lc32gq") format("woff"),
+    url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/icomoon/icomoon.svg?lc32gq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'picto';
+  src:  url('/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/picto/picto.eot?6hrdf1');
+  src:  url('/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/picto/picto.eot?6hrdf1#iefix') format('embedded-opentype'),
+    url('/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/picto/picto.ttf?6hrdf1') format('truetype'),
+    url('/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/picto/picto.woff?6hrdf1') format('woff'),
+    url('/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/picto/picto.svg?6hrdf1#picto') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'assureoicon';
+    src: url('/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/assureoicon/Assureoiconv14.ttf') format('truetype'),
+         url('/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/assureoicon/Assureoiconv14.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'iconfp';
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/iconfp/iconfp.eot");
+    src: url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/iconfp/iconfp.eot") format("e mbedded-opentype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/iconfp/iconfp.ttf") format("truetype"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/iconfp/iconfp.woff") format("woff"), url("/web/20210305023300im_/https://www.assureo.fr/sites/all/themes/custom/assureo/fonts/iconfp/iconfp.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+/*
+     FILE ARCHIVED ON 02:33:00 Mar 05, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:26:41 Jul 06, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 156.058
+  load_resource: 162.319
+  exclusion.robots.policy: 0.213
+  cdx.remote: 0.121
+  LoadShardBlock: 83.483 (3)
+  exclusion.robots: 0.229
+  esindex: 0.019
+  PetaboxLoader3.datanode: 187.92 (4)
+  PetaboxLoader3.resolve: 30.422
+  CDXLines.iter: 19.082 (3)
+*/

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ASSURÉO</title>
+	<link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+
+	<div id="page">
+		<img id="logo" src="/img/ao.png" alt="ASSUREO">
+
+		<content>
+			<p>
+				ASSUREO a subi <strong>un acte malveillant (attaque informatique)</strong> qui a nécessité l’arrêt de ses systèmes informatiques et entraînant des difficultés d’accès sur le site assureo.fr et sur l’ensemble de ses services de gestion.
+			</p>
+			<p>
+				Nous travaillons à la <strong>résolution rapide de cet incident.</strong>
+			</p>
+			<p >
+				Dans cet intervalle nos conseillers restent joignables par téléphone au&nbsp;:
+			</p>
+			<p>
+				<strong><a href="tel:+0149156001">01&nbsp;49&nbsp;15&nbsp;60&nbsp;01</a></strong>
+			</p>
+			<p class="signature">
+				<strong>Les équipes ASSURÉO</strong>
+			</p>
+		</content>
+	</div>
+	
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 10:34:31 Jul 05, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:27:07 Jul 06, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots: 0.133
+  PetaboxLoader3.resolve: 85.134 (2)
+  LoadShardBlock: 1646.339 (3)
+  RedisCDXSource: 33.081
+  esindex: 0.017
+  exclusion.robots.policy: 0.124
+  CDXLines.iter: 17.228 (3)
+  captures_list: 1699.882
+  PetaboxLoader3.datanode: 2347.127 (4)
+  load_resource: 836.242
+-->

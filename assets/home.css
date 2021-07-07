@@ -638,8 +638,13 @@ ul {
     position: relative;
 }
 
+.stripe-section button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 #intro.stripe-section {
-    padding: 5rem 0;
+    padding: 9rem 0;
     position: relative;
     background-image: url("./BG_HEADER.jpg");
     background-repeat: no-repeat;
