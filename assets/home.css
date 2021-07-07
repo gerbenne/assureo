@@ -1546,6 +1546,10 @@ body.admin-menu{
     color:#fff;
 }
 
+#dydu-teaser {
+    display: none !important;
+}
+
 
 @media screen and (min-width:768px) {
     #intro #intro-as-tabs>li>button:hover,
