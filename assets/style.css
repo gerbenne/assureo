@@ -6,13 +6,13 @@
     max-width: 750px;
 }
 
-#page-devis .container > p:nth-child(3) {
+#page-devis .container > p.mea {
     margin-bottom: 50px;
     color: #e30155;
     text-transform: uppercase;
 }
 
-#page-devis .container > p:nth-child(3) span {
+#page-devis .container > p.mea span {
     font-weight: bold;
 }
 
