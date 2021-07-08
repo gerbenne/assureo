@@ -2466,6 +2466,18 @@ body.admin-menu{
     background-size: contain;
 }
 
+.table.table-formules .line td .formule-title:before {
+    background-image: url("./down-arrow.png");
+    display: block;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 15px;
+    height: 15px;
+}
+
 @media screen and (max-width: 1075px) {
     #block-views-latest-hp-block .view-latest-hp > .view-content {
         width: 100%;
